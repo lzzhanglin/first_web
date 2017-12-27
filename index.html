@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="z.ico">
 
     <title>Blog Template for Bootstrap</title>
 
@@ -35,23 +35,52 @@
 
     <div class="blog-masthead">
       <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
-          <a class="blog-nav-item" href="#">春</a>
-          <a class="blog-nav-item" href="#">夏</a>
-          <a class="blog-nav-item" href="#">秋</a>
-          <a class="blog-nav-item" href="#">冬</a>
-          <a class="blog-nav-item" href="#">About</a>
-        </nav>
+        
+          <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Blog base on bootstrap</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="http://xiangrongzhao.com/">Home</a></li>
+            <li ><a href="http://lastisee.cn/">Page</a></li>
+            <li><a href="https://github.com/lzzhanglin/first_web">About</a></li>
+            <li><a href="https://weibo.com/darener">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">散文</a></li>
+                <li><a href="#">诗歌</a></li>
+                <li><a href="#">随笔</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">笔记</li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Python</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li ><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
       </div>
     </div>
 
     <div class="container">
 
-      <div class="blog-header">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-      </div>
+      
       <div class="page-header">
         <h1>Carousel</h1>
       </div>
@@ -83,54 +112,88 @@
       </div>
 
 
+      <div class="blog-header">
+        <h4 class="blog-title">The Bootstrap Blog</h4>
+        <p class="lead blog-description">This is a personal blog that based on official example template.</p>
+      </div>
+
 
       <div class="row">
 
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <h2 class="blog-post-title">热爱生命</h2>
+            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
             <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p>我不去想是否能够成功</p>
+            <p>既然选择了远方</p>
+            <p>便只顾风雨兼程</p>
             </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            <hr>
+            
+            <blockquote>
+              <p>我不去想能否赢得爱情</p>
+              <p>既然钟情于玫瑰</p>
+              <p>就勇敢地吐露真诚</p>
+            <hr>
+              <p>我不去想身后会不会袭来寒风冷雨</p>
+              <p>既然目标是地平线</p>
+              <p>留给世界的只能是背影</p>
+            <hr>
+              <p>我不去想未来是平坦还是泥泞</p>
+              <p>只要热爱生命</p>
+              <p>一切，都在意料之中</p>
+            </blockquote>
+            
+          </div><!-- /.blog-post -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">怀想</h2>
+            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
+            <blockquote>
+            <p>我不知道</p>
+            <p>是否　还在爱你</p>
+            <p>如果爱着</p>
+            <p>为什么　会有那样一次分离</p>
+            <hr>
+              <p>我不知道</p>
+              <p>是否　早已不再爱你</p>
+              <p>如果不爱</p>
+              <p>为什么　记忆没有随着时光</p>
+              <p>流去</p>
+            <hr>
+              <p>回想你的笑靥</p>
+              <p>我的心　起伏难平</p>
+              <p>可恨一切</p>
+              <p>都已成为过去</p>
+              <p>只有婆娑的夜晚</p>
+              <p>一如从前　那样美丽</p>
+            <hr>
+              <p>我不去想未来是平坦还是泥泞</p>
+              <p>只要热爱生命</p>
+              <p>一切，都在意料之中</p>
+            </blockquote>
+            
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <h2 class="blog-post-title">剪不断的情愫</h2>
+            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
             <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p>原想这一次远游</p>
+            <p>就能忘记你秀美的双眸</p>
+            <p>就能剪断</p>
+            <p>丝丝缕缕的情愫</p>
+            <p>和秋风也吹不落的忧愁</p>
+            <hr>
+              <p>谁曾想　到头来</p>
+              <p>山河依旧</p>
+              <p>爱也依旧</p>
+              <p>你的身影</p>
+              <p>刚在身后　又到前头</p>
+            <hr>
             </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
