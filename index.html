@@ -1,277 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="z.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>Grayscale - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
-  <body>
+  <body id="page-top">
 
-    <div class="blog-masthead">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        
-          <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Blog base on bootstrap</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li ><a href="#">Home</a></li>
-            <li ><a href="http://lastisee.cn/">Page</a></li>
-            <li><a href="https://github.com/lzzhanglin/first_web">About</a></li>
-            <li><a href="https://weibo.com/darener">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="prose/prose.html">散文</a></li>
-                <li><a href="poetry/poetry.html">诗歌</a></li>
-                
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">笔记</li>
-                <li><a href="note/note_java.html">Java</a></li>
-                <li><a href="note/note_python.html">Python</a></li>
-              </ul>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="prose/prose.html">Prose</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="poetry/poetry.html">Poetry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="note/note_java.html">Java</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="note/note_python.html">Python</a>
             </li>
           </ul>
-          <!-- <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li ><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul> -->
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
-      </div>
-    </div>
 
-    <div class="container">
-
-      
-      <div class="page-header">
-        <h1>Carousel</h1>
-      </div>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="img/img7.png" alt="First slide">
-          </div>
-          <div class="item">
-            <img src="img/img8.png" alt="Second slide">
-          </div>
-          <div class="item">
-            <img src="img/img9.png" alt="Third slide">
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Grayscale</h1>
+              <p class="intro-text">A free, responsive, one page Bootstrap theme.
+                <br>Created by Start Bootstrap.</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
+    </header>
 
-
-      <div class="blog-header">
-        <h4 class="blog-title">The Bootstrap Blog</h4>
-        <p class="lead blog-description">This is a personal blog that based on official example template.</p>
+    <!-- Artical Section -->
+    <section id="artical" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Artical</h2>
+            
+            <p>This is my first artical</p>
+            <a href="prose/prose.html" class="btn btn-default btn-lg">Visit Artical Page</a>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <!-- Download Section -->
+    <section id="note" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Note</h2>
+          <p>This is my note while learning java and python</p>
+          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Note Page</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="row">
-
-        <div class="col-sm-8 blog-main">
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">热爱生命</h2>
-            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
-            <blockquote>
-            <p>我不去想是否能够成功</p>
-            <p>既然选择了远方</p>
-            <p>便只顾风雨兼程</p>
-            </blockquote>
-            <hr>
-            
-            <blockquote>
-              <p>我不去想能否赢得爱情</p>
-              <p>既然钟情于玫瑰</p>
-              <p>就勇敢地吐露真诚</p>
-            <hr>
-              <p>我不去想身后会不会袭来寒风冷雨</p>
-              <p>既然目标是地平线</p>
-              <p>留给世界的只能是背影</p>
-            <hr>
-              <p>我不去想未来是平坦还是泥泞</p>
-              <p>只要热爱生命</p>
-              <p>一切，都在意料之中</p>
-            </blockquote>
-            
-          </div><!-- /.blog-post -->
-          <div class="blog-post">
-            <h2 class="blog-post-title">怀想</h2>
-            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
-            <blockquote>
-            <p>我不知道</p>
-            <p>是否　还在爱你</p>
-            <p>如果爱着</p>
-            <p>为什么　会有那样一次分离</p>
-            <hr>
-              <p>我不知道</p>
-              <p>是否　早已不再爱你</p>
-              <p>如果不爱</p>
-              <p>为什么　记忆没有随着时光</p>
-              <p>流去</p>
-            <hr>
-              <p>回想你的笑靥</p>
-              <p>我的心　起伏难平</p>
-              <p>可恨一切</p>
-              <p>都已成为过去</p>
-              <p>只有婆娑的夜晚</p>
-              <p>一如从前　那样美丽</p>
-            <hr>
-              <p>我不去想未来是平坦还是泥泞</p>
-              <p>只要热爱生命</p>
-              <p>一切，都在意料之中</p>
-            </blockquote>
-            
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">剪不断的情愫</h2>
-            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
-            <blockquote>
-            <p>原想这一次远游</p>
-            <p>就能忘记你秀美的双眸</p>
-            <p>就能剪断</p>
-            <p>丝丝缕缕的情愫</p>
-            <p>和秋风也吹不落的忧愁</p>
-            <hr>
-              <p>谁曾想　到头来</p>
-              <p>山河依旧</p>
-              <p>爱也依旧</p>
-              <p>你的身影</p>
-              <p>刚在身后　又到前头</p>
-            <hr>
-            </blockquote>
-            
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">假如你不够快乐</h2>
-            <p class="blog-post-meta">Author: <a href="https://zh.wikipedia.org/wiki/%E6%B1%AA%E5%9B%BD%E7%9C%9F">汪国真</a> December 27, 2017 posted by <a href="https://github.com/lzzhanglin">lzzhanglin</a></p>
-            <blockquote>
-            <p>假如你不够快乐</p>
-            <p>也不要把眉头深锁</p>
-            <p>人生本来短暂</p>
-            <p>为什么　还要栽培苦涩</p>
-            <hr>
-            <p>打开尘封的门窗</p>
-            <p>让阳光雨露洒遍每个角落</p>
-            <p>走向生命的原野</p>
-            <p>让风儿熨平前额</p>
-            <hr>
-              <p>博大可以稀释忧愁</p>
-              <p>深色能够覆盖浅色</p>
-            <hr>
-            </blockquote>
-            
-          </div><!-- /.blog-post -->
-
-         
-
-          <nav>
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Start Bootstrap</h2>
+            <p>This page is based on <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a></p>
+            <p>Extremely grateful!</p>
+            <ul class="list-inline banner-social-buttons">
+               <li class="list-inline-item">
+                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Google+</span>
+                </a>
+              </li>
             </ul>
-          </nav>
-
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>这是一个静态的基于bootstrap的个人博客</p>
           </div>
-          <div class="sidebar-module">
-            <h4>Archives</h4>
-            <ol class="list-unstyled">
-              <li><a href="poetry/poetry.html">Poetry</a></li>
-              <li><a href="prose/prose.html">Prose</a></li>
-              <li><a href="note/note_java.html">Java</a></li>
-              <li><a href="note/note_python.html">Python</a></li>
-              
-            </ol>
-          </div>
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="https://github.com/lzzhanglin">GitHub</a></li>
-              <li><a href="https://weibo.com/darener">Weibo</a></li>
-              <li><a href="https://www.instagram.com/zhanglingardenia/">Ins</a></li>
-            </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
+        </div>
+      </div>
+    </section>
 
-      </div><!-- /.row -->
+    <!-- Map Section -->
+    <div id="map"></div>
 
-    </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; lzzhanglin 2017</p>
+      </div>
     </footer>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnEpCUaBWpKlZWfMMEE-skIi5Xx8sfM9I"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
   </body>
+
 </html>
